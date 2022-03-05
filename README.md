@@ -6,7 +6,7 @@ A Lisp-like language that compiles to JavaScript and makes use of scopes (known 
 output "Hello, World!";
 ```
 - Comments can be defined with `//...` or `/*...*/`.
-- Variables are pseudo-typed, and are created with the name of their type (`integer` `int`, `string`, `str`, `boolean` `bln`, etc)
+- Variables are pseudo-typed, and are created with the name of their type (`integer` `int`, `string` `str`, `boolean` `bln`, etc)
 
   Pseudo-typed as in any value the variable holds will automatically be converted to its type. 
 - Functions are called with the name of the function, a space, and then arguments separated by spaces.
