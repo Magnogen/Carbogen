@@ -1,5 +1,5 @@
 # Carbogen
-A Lisp-like language that compiles to JavaScript and makes use of scopes. 
+A Lisp-like language that compiles to JavaScript and makes use of scopes (known as "bubbles"). 
 
 ## Syntax
 ```
