@@ -23,7 +23,7 @@ output "Hello, World!";
 
 A Truth Machine.
 ```
-int input (inp); // store input from user in variable, input
+int input = (inp); // store input from user in variable, input
 if (input == 0) (
     out "0";
 );
@@ -38,8 +38,8 @@ Swap two variables.
 
 Works on the premise that updating a variable releases its original value.
 ```
-int a (42);
-int b (69);
+int a = (42);
+int b = (69);
 
 a = (b = a); // the magic
 
