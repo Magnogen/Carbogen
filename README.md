@@ -40,15 +40,21 @@ output "Hello, World!";
 A Truth Machine.
 
 ```
-int input = (inp); // store input from user in variable, input
+integer input = (inp); // store input from user in variable, input
 if (input == 0) (
-    out "0";
+    output "0";
 );
 if (input == 1) (
     while (true) (
-        out "1";
+        output "1";
     );
 );
+```
+
+Compressed
+
+```
+int i=inp;if(i==0)(out"0");if(i==1)(whl(tru)(out"1"))
 ```
 
 Swap two variables.
