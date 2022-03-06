@@ -12,9 +12,29 @@ I'll be representing the syntax with the syntax for creating `Elements.Meal.Edib
 | [String](#strings)             | str | 'abc'     | ''           |
 | [Hexadecimal](#hexadecimals)   | hex | #2a       | #0           |
 
+## Integers
+
+```
+('-'?, unt)
+```
+
 ## Unsigned Integers
 
-Test
+```
+[...'0123456789']+
+```
+
+## Decimals
+
+```
+(unt, ".", unt)
+```
+
+## Booleans
+
+```
+[i'tru', i'fls']
+```
 
 ## Strings
 
@@ -26,4 +46,8 @@ Test
 ]
 ```
 
-## More to come
+## Hexadecimals
+
+```
+('#', [...i'012456789abcdef']+)
+```
