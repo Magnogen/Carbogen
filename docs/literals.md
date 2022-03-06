@@ -41,7 +41,7 @@ They are stored as two integers - a positive or negative one, and a positive one
 ## Booleans
 
 ```
-[i'tru', i'fls']
+[i'tru', i'true', i'fls', i'false']
 ```
 
 Typical booleans - true or false.
