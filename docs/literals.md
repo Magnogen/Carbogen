@@ -18,11 +18,15 @@ I'll be representing the syntax with the syntax for creating `Elements.Meal.Edib
 ('-'?, unt)
 ```
 
+Signed integers are whole numbers that span between negative infinity and infinity.
+
 ## Unsigned Integers
 
 ```
 [...'0123456789']+
 ```
+
+Unsigned integers are whole numbers that span between 0 and infinity.
 
 ## Decimals
 
@@ -30,11 +34,17 @@ I'll be representing the syntax with the syntax for creating `Elements.Meal.Edib
 (unt, ".", unt)
 ```
 
+Decimals are not necessarily whole numbers that span from negative infinity and infinity.
+
+They are stored as two integers - a positive or negative one, and a positive one. Together they form a fraction that results in the decimal value.
+
 ## Booleans
 
 ```
 [i'tru', i'fls']
 ```
+
+Typical booleans - true or false.
 
 ## Strings
 
@@ -46,8 +56,12 @@ I'll be representing the syntax with the syntax for creating `Elements.Meal.Edib
 ]
 ```
 
+A group of characters. (Represented by ascii-encoded unsigned integers.)
+
 ## Hexadecimals
 
 ```
-('#', [...i'012456789abcdef']+)
+('-'?, '#', [...i'012456789abcdef']+)
 ```
+
+A shorter way of writing signed integers, useful for creating colours and such
