@@ -8,27 +8,32 @@ A Lisp-like language that compiles to JavaScript and makes use of scopes (known 
 output "Hello, World!";
 ```
 
-- Comments can be defined with `//...` or `/*...*/`.
-
-- Variables are pseudo-typed, and are created with the name of their type (`integer` `int`, `string` `str`, `boolean` `bln`, etc)
-
-  Pseudo-typed as in any value the variable holds will automatically be converted to its type. 
-
-- Functions are called with the name of the function, a space, and then arguments separated by spaces.
-
 - Every line produces a "releasable" value. Even variable declarations. Everything.
 
-- Lines end with a semicolon.
+- Lines end with a semicolon. 
 
-- Bubbles (scopes) are surrounded by `(` and `)`. The last line of the bubbles determines what is released when it "pops".
+- Bubbles (scopes) are collections of lines, and are encased with `()`s. The last line of the bubbles determines what is returned when it "pops".
 
-  Not all bubbles have to be executed.
+  Not all bubbles have to be executed. This can lead to loops and conditionals.
 
 - Functions, variables and namespaces are case-insensitive.
 
-- Every variable and function belong to a namespace. By default this is `carbogen` (`cbgn`) for vanilla ones, and `project` (`proj`) for custom ones.
+- Every function and variable belong to a namespace.
+  
+  By default, this is `carbogen` (`cbgn`) for vanilla ones, and `project` (`proj`) for custom ones.
+  
+  Plugins can be created with their own namespace. This is to help with differentiating functions, especially considering functions usually have 3-letter proxies.
 
-- The vanilla namespace can be shortened to 4 letters, functions can also be shortened, but usually to 3.
+- Functions are called with the name of the function, a space, and then arguments separated by spaces.
+  (This is where it's like Lisp!)
+
+- The vanilla namespace can be shortened to 4 letters and functions can be shortened - usually to 3 letters. 
+
+- Variables are pseudo-typed, and are created with the name of their type. (`integer` `int`, `string` `str`, `boolean` `bln`, etc.)
+
+  Pseudo-typed as in any value the variable holds will automatically be converted to its type.  
+
+- Comments can be defined with `//...` or `/*...*/`.
 
 ## Examples
 
