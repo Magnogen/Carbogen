@@ -1,6 +1,6 @@
 # Carbogen Literals
 Strings, integers, decimals, arrays, etc.
-I'll be representing the syntax with the syntax for creating `Elements.Meal.Edible(...)`s
+I'll be representing the syntax with the syntax for creating `Elements.Meal.Edible(...)`s - keep in mind that this hasn't actually been created yet lmao.
 
 | NAME                           | ID  | EXAMPLE   | DEFAULT      |
 | -                              | -   | -         | -            |
