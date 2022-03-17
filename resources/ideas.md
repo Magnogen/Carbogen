@@ -74,12 +74,12 @@ ints fib int d=(ints s;int a,b=0,1;rep ++d(int c=(a+b);s+=(a=(b=c))));
 
 Types, lists end in 's' - doubling number of types
 
-| NAME        | ID  | EXAMPLE   | DEFAULT      |
-| -           | -   | -         | -            |
-| Anything    | any | *         | random 0 - 1 |
-| Integer     | int | -42       | 0            |
-| Unsigned    | unt | 42        | 0            |
-| Decimal     | dec | 24.59     | 0.0          |
-| Boolean     | bln | tru / fls | fls          |
-| String      | str | 'abc'     | ''           |
-| Hexadecimal | hex | #2a       | #0           |
+| NAME        | ID  | EXAMPLE   | DEFAULT           |
+| -           | -   | -         | -                 |
+| Anything    | any | *         | random 0 - 1      |
+| Integer     | int | -42       | 0                 |
+| Unsigned    | unt | 42        | 0                 |
+| Decimal     | dec | 24.59     | 0.0               |
+| Boolean     | bln | tru / fls | fls               |
+| String      | str | 'abc'     | '' (empty string) |
+| Hexadecimal | hex | #2a       | #0                |
