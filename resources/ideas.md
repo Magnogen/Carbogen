@@ -10,43 +10,41 @@ plugin:function, plug:fun
 a space is for execution
 
 ```
-str hello = "Adam!";
+hello = "Adam!";
 out hello;  // "Adam!"
 (
-|   str hello = "Beverly!";
+|   hello = "Beverly!";
 |   out hello;  // "Beverly!"
+|   hello2 = "Chris!";
+|   out hello2;
 );
-out hello;  // "Adam!"
-(
-|   hello = "Chris!";
-|   out hello;  // "Chris!"
-);
-out hello;  // "Chris!"
+out hello;  // "Beverly!"
+out hello2;  // VariableError
 ```
 
 Set a variable with
 ```
-type name = value;
+name = value;
 ```
 eg
 ```
-str variable = "Hello, World!";
+variable = "Hello, World!";
 ```
 
 Declare a function with
 ```
-type name type arg1 type2 arg2 etc = (
+name arg1 arg2 etc = (
 |   ...
 );
 ```
 eg
 ```
-ints fibonacci int depth = (
-|   ints sequence = [ ];
-|   int a = 0;
-|   int b = 1;
+fibonacci depth = (
+|   sequence = [ ];
+|   a = 0;
+|   b = 1;
 |   repeat depth (
-|   |   int c = ( a + b );
+|   |   c = ( a + b );
 |   |   sequence = ( sequence + a );
 |   |   a = b;
 |   |   b = c;
@@ -57,29 +55,27 @@ ints fibonacci int depth = (
 
 Compression example:
 ```
-ints fib int d=(
-|   ints s;
-|   int a,b=0,1;
-|   rep ++d(
-|   |   int c=(a+b);
-|   |   s+=(a=(b=c))
+fib d=(
+|   s=[];
+|   a,b=0,1;
+|   rep++d(
+|   |   s+=(a=(b=(a+b)))
 |   )
 );
 ```
 
 Oneline
 ```
-ints fib int d=(ints s;int a,b=0,1;rep ++d(int c=(a+b);s+=(a=(b=c))));
+fib d=(s=[];a,b=0,1;rep++d(s+=(a=(b=(a+b)))));
 ```
 
 Types, lists end in 's' - doubling number of types
 
-| NAME        | ID  | EXAMPLE   | DEFAULT           |
-| -           | -   | -         | -                 |
-| Anything    | any | *         | random 0 - 1      |
-| Integer     | int | -42       | 0                 |
-| Unsigned    | unt | 42        | 0                 |
-| Decimal     | dec | 24.59     | 0.0               |
-| Boolean     | bln | tru / fls | fls               |
-| String      | str | 'abc'     | '' (empty string) |
-| Hexadecimal | hex | #2a       | #0                |
+| NAME        | EXAMPLE   |
+| -           | -         |
+| Integer     | -42       |
+| Unsigned    | 42        |
+| Decimal     | 24.59     |
+| Boolean     | tru / fls |
+| String      | 'abc'     |
+| Hexadecimal | #2a       |
