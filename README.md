@@ -29,9 +29,7 @@ output "Hello, World!";
 
 - The vanilla namespace can be shortened to 4 letters and functions can be shortened - usually to 3 letters. 
 
-- Variables are pseudo-typed, and are created with the name of their type. (`integer` `int`, `string` `str`, `boolean` `bln`, etc.)
-
-  Pseudo-typed as in any value the variable holds will automatically be converted to its type.  
+- Variables are untyped, and are created with an `=` sign.
 
 - Comments can be defined with `//...` or `/*...*/`.
 
@@ -40,7 +38,7 @@ output "Hello, World!";
 A Truth Machine.
 
 ```
-integer input = (inp); // store input from user in variable, input
+input = (inp); // store input from user in variable, input
 if (input == 0) (
     output "0";
 );
@@ -54,7 +52,7 @@ if (input == 1) (
 Compressed
 
 ```
-int i=inp;if(i==0)(out"0");if(i==1)(whl(tru)(out"1"))
+i=inp;if(i==0)(out"0");if(i==1)(whl(tru)(out"1"))
 ```
 
 Swap two variables.
@@ -62,8 +60,8 @@ Swap two variables.
 Works on the premise that updating a variable releases its original value.
 
 ```
-int a = (42);
-int b = (69);
+a = (42);
+b = (69);
 
 a = (b = a); // the magic
 
