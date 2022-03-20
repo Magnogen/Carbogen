@@ -15,6 +15,6 @@ carbogen:output 'Hello, World!';
 // and any combination of capitals, brackets, semicolons and whitespace
 // such as:
 
-( cArBoGeN:output ( "Hello, World!" ; ) ; ) ; // the longest and weirdest
+( cArBoGeN:oUtPuT ( "Hello, World!" ; ) ; ) ; // the longest and weirdest
 
 out"Hello, World!" // the shortest
