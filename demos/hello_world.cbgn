@@ -1,0 +1,20 @@
+// All of these do the same thing
+
+out 'Hello, World!';
+
+output 'Hello, World!';
+
+cbgn:out 'Hello, World!';
+
+cbgn:output 'Hello, World!';
+
+carbogen:out 'Hello, World!';
+
+carbogen:output 'Hello, World!';
+
+// and any combination of capitals, brackets, semicolons and whitespace
+// such as:
+
+( cArBoGeN:output ( "Hello, World!" ; ) ; ) ; // the longest and weirdest
+
+out"Hello, World!" // the shortest
