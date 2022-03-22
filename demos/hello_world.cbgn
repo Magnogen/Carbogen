@@ -1,4 +1,4 @@
-// All of these do the same thing
+// Every line in this file does the same thing
 
 out 'Hello, World!';
 
@@ -15,6 +15,6 @@ carbogen:output 'Hello, World!';
 // and any combination of capitals, brackets, semicolons and whitespace
 // such as:
 
-( cArBoGeN:oUtPuT ( "Hello, World!" ; ) ; ) ; // the longest and weirdest
+( cArBoGeN:oUtPuT ( "Hello, World!" ; ) ; ) ;   // the longest and weirdest
 
-out"Hello, World!" // the shortest
+out"Hello, World!"   // the shortest
