@@ -14,6 +14,9 @@ my_hexadecimal = #2a;
 my_function arg    = (arg + 1);
 argless_function _ = (2 * (rndm:rnd) - 1);
 
+out (my_function 41); // > 42
+out (argless_function); // > *a random number between -1 and 1*
+
 // Grouped Primitives / Literals
 
 my_list   = [
@@ -28,10 +31,14 @@ my_object = {
     method arg: (arg + 1),
     my_count: 0,
     self_method amount: (
-        self.selfish_count += amount;
-        self.selfish_count
+        self.my_count += amount;
+        self.my_count
     )
 };
+
+out (my_object.self_method 2); // > 2
+out (my_object.self_method 4); // > 6
+// etc.
 
 // Casting
 
