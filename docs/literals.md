@@ -31,7 +31,7 @@ Unsigned integers are whole numbers that span between 0 and infinity.
 ## Decimals
 
 ```
-(unt, ".", unt)
+(int, ".", unt)
 ```
 
 Decimals are not necessarily whole numbers that span from negative infinity and infinity.
