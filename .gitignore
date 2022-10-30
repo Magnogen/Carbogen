@@ -1,0 +1,5 @@
+# ignore built .exe files
+/.build
+
+# ignore vscode data
+/.vscode
